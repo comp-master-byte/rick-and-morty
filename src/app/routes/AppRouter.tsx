@@ -2,10 +2,14 @@ import { Route, Routes } from 'react-router';
 import { Characters, CharactersInfoPage, AppTemplate } from '@/pages';
 
 const ROUTES = [
-  { id: 'characters', path: '/', element: <Characters /> },
+  {
+    id: 'characters',
+    path: '/',
+    element: <Characters />,
+  },
   {
     id: 'character-info',
-    path: '/character-info:id',
+    path: 'character-info/:id',
     element: <CharactersInfoPage />,
   },
 ];

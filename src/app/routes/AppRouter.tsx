@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router';
-import { Characters, CharactersInfoPage, AppTemplate } from '@/pages';
+import { CharactersPage, CharactersInfoPage, AppTemplate } from '@/pages';
 
 const ROUTES = [
   {
     id: 'characters',
     path: '/',
-    element: <Characters />,
+    element: <CharactersPage />,
   },
   {
     id: 'character-info',

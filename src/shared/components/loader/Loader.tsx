@@ -1,6 +1,6 @@
 import styles from './Loader.module.css';
 import loaderIcon from '@/shared/assets/icons/loading.svg';
-import { Heading3 } from '@/shared';
+import { Heading3, LoaderIcon } from '@/shared';
 
 type LoaderProps = {
   variant: 'small' | 'large';
@@ -10,8 +10,7 @@ type LoaderProps = {
 export function Loader({ variant = 'large', subtitle }: LoaderProps) {
   return (
     <div className={styles.loaderWrapper}>
-      <img
-        src={loaderIcon}
+      <LoaderIcon
         className={
           variant === 'large' ? styles.largeLoader : styles.smallLoader
         }

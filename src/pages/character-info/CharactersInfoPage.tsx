@@ -1,7 +1,5 @@
 import styles from './CharachersInfoPage.module.css';
-import { Loader, useRouter } from '@/shared';
-import arrowBackIcon from '@/shared/assets/icons/arrow-back.svg';
-import { Heading3 } from '@/shared/ui';
+import { ArrowBackIcon, Loader, useRouter, Heading3 } from '@/shared';
 
 export function CharactersInfoPage() {
   const { goBack } = useRouter();
@@ -12,7 +10,7 @@ export function CharactersInfoPage() {
         className={styles.charactersInfoBackButton}
         onClick={goBack}
       >
-        <img src={arrowBackIcon} />
+        <ArrowBackIcon />
         <Heading3>GO BACK</Heading3>
       </button>
       <Loader

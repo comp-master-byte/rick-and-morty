@@ -17,3 +17,10 @@ body {
     width: 100%;
     margin: 0 auto;
 }
+
+.heading3 {
+    font-family: 'Karla';
+    font-width: 700;
+    font-size: 18px;
+    line-height: 1;
+}

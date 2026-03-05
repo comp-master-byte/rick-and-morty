@@ -1,6 +1,5 @@
 import styles from './Loader.module.css';
-import loaderIcon from '@/shared/assets/icons/loading.svg';
-import { Heading3, LoaderIcon } from '@/shared';
+import { LoaderIcon } from '@/shared';
 
 type LoaderProps = {
   variant: 'small' | 'large';
@@ -15,9 +14,7 @@ export function Loader({ variant = 'large', subtitle }: LoaderProps) {
           variant === 'large' ? styles.largeLoader : styles.smallLoader
         }
       />
-      {subtitle && (
-        <Heading3 className={styles.loaderSubtitle}>{subtitle}</Heading3>
-      )}
+      {subtitle && <h3 className={`heading3 ${styles.loaderSubtitle}`}></h3>}
     </div>
   );
 }

@@ -1,5 +1,5 @@
 import styles from './CharachersInfoPage.module.css';
-import { ArrowBackIcon, Loader, useRouter, Heading3 } from '@/shared';
+import { ArrowBackIcon, Loader, useRouter } from '@/shared';
 
 export function CharactersInfoPage() {
   const { goBack } = useRouter();
@@ -11,12 +11,9 @@ export function CharactersInfoPage() {
         onClick={goBack}
       >
         <ArrowBackIcon />
-        <Heading3>GO BACK</Heading3>
+        <h3 className='heading3'>GO BACK</h3>
       </button>
-      <Loader
-        variant='large'
-        subtitle='Loading characters....'
-      />
+      <Loader variant='large' />
     </section>
   );
 }

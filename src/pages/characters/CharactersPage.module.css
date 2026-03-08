@@ -1,0 +1,10 @@
+.charactersPageWrapper {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.charactersMainLogo {
+    margin-bottom: 16px;
+}
